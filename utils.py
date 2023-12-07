@@ -12,7 +12,7 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 # embeddings  = OpenAIEmbeddings()
 #initialise the pinecone
 pinecone.init(
-    api_key = st.secrets["PINECONE_API_KEY"],
+    api_key = "c1e9a3a0-8ff6-41a1-b7f1-40adbc38bd41",
     environment = 'gcp-starter'
 )
 
