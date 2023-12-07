@@ -35,7 +35,7 @@ if 'requests' not in st.session_state:
 
 ## define the chat model
 
-llm = ChatOpenAI(model_name = 'gpt-3.5-turbo', temperature = 0.0, openai_api_key = st.secrets['OPENAI_API_KEY'])
+llm = ChatOpenAI(openai_api_key = st.secrets['OPENAI_API_KEY'], model_name = 'gpt-3.5-turbo', temperature = 0.0)
 # llm = OpenAI(temperature= 0.0)
 
 if 'buffer_memory' not in st.session_state:
